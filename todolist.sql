@@ -1,7 +1,7 @@
 CREATE TABLE "todos" (
   "id" serial NOT NULL PRIMARY KEY,
   "title" varchar(255) NOT NULL,
-  "details" int8,
+  "details" text,
   "priority" int NOT NULL DEFAULT (1),
   "created_at" TIMESTAMP NOT NULL,
   "completed_at" TIMESTAMP
